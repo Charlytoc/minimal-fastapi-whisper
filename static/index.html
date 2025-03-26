@@ -45,7 +45,7 @@
             const formData = new FormData();
             formData.append('file', audioBlob, 'recorded_audio.wav');
 
-            const response = await fetch('http://127.0.0.1:8005/transcribe/', {
+            const response = await fetch('http://143.244.201.74:8005/transcribe/', {
                 method: 'POST',
                 body: formData
             });

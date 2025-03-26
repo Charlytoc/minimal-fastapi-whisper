@@ -9,7 +9,7 @@ import uvicorn
 app = FastAPI()
 
 # Load Whisper model (you can use 'base', 'small', 'medium', 'large')
-model = whisper.load_model("small")
+model = whisper.load_model("base")
 
 # Enable CORS for frontend requests
 app.add_middleware(
